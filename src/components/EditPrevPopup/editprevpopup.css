@@ -1,0 +1,83 @@
+.editPrevPopup {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.editPrevPopup_content {
+    padding: 52px 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.editPrevPopup_content form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.editPrevPopup_content form input, .editPrevPopup_content form select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    color: black;
+}
+
+.editPrevPopup_content form select:invalid {
+    color: gray;
+}
+
+.editPrevPopup_content form input:focus, .editPrevPopup_content form select:focus {
+    outline: none;
+}
+
+.editPrevPopup_buttonsArea {
+    width: 87.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.editPrevPopup_button {
+    margin: 10px 8px 0 8px;
+    width: 9rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 0.6rem;
+    margin-left: 13px;
+    color: white;
+    background-color: rgb(63, 63, 185);
+    transition: all .4s;
+}
+
+.editPrevPopup_button:hover {
+    background-color: rgb(40, 40, 146);
+}
+
+@media screen and (max-width: 440px){
+    .editPrevPopup_content {
+        padding: 52px 22px;
+        width: 77%;
+    }
+
+    .editPrevPopup_form {
+        width: 90%;
+    }
+}

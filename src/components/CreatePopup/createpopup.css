@@ -1,0 +1,91 @@
+.createPopup {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.createPopup_content {
+    padding: 52px 32px;
+    width: 100%;
+    max-width: 640px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.createPopup_form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.createPopup_form input, .createPopup_form select {
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    color: black;
+}
+
+.createPopup_form select:invalid {
+    color: gray;
+}
+
+.createPopup_form input:focus, .createPopup_form select:focus {
+    outline: none;
+}
+
+.createPopup_form label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(190, 29, 29);
+    font-size: 0.78rem;
+    margin: -2px 0 1px 0;
+    padding-left: 5px;
+}
+
+.createPopup_buttonsArea {
+    width: 87.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.createPopup_button {
+    margin: 10px 8px 0 8px;
+    width: 9rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.9rem 0.6rem;
+    margin-left: 13px;
+    color: white;
+    background-color: rgb(63, 63, 185);
+    transition: all .4s;
+}
+
+.createPopup_button:hover {
+    background-color: rgb(40, 40, 146);
+}
+
+@media screen and (max-width: 440px){
+    .createPopup_content {
+        padding: 52px 22px;
+        width: 77%;
+    }
+
+    .createPopup_form {
+        width: 90%;
+    }
+}

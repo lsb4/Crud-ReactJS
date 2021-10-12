@@ -1,0 +1,87 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    max-width: 70%;
+    background-color: rgb(141, 141, 141);
+    border-radius: 20px;
+}
+
+.menu_title {
+    color: white;
+    padding-left: 1.7rem;
+}
+
+.menu_buttonsArea{
+    padding-right: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 60%;
+}
+
+.menu_button {
+    width: 9rem;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 0.6rem;
+    margin-left: 13px;
+    color: white;
+    background-color: rgb(63, 63, 185);
+    transition: all .4s;
+}
+
+.menu_button:hover {
+    background-color: rgb(40, 40, 146);
+}
+
+.menu_add {
+    width: 7.5rem;
+}
+
+@media screen and (max-width: 440px){
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        max-width: 70%;
+        background-color: rgb(141, 141, 141);
+        border-radius: 20px;
+    }
+    
+    .menu_title {
+        color: white;
+        margin: 0;
+        padding: 0;
+        margin-top: 1.5rem;
+    }
+    
+    .menu_buttonsArea{
+        justify-content: space-evenly;
+        align-items: center;
+        width: 80%;
+        padding: 0;
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+    
+    .menu_button {
+        margin: 0;
+        width: 9rem;
+        border: none;
+        border-radius: 8px;
+        padding: 0.6rem 0.6rem;
+        color: white;
+        background-color: rgb(63, 63, 185);
+        margin: 3px;
+    }
+}

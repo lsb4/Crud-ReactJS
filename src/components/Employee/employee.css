@@ -1,0 +1,76 @@
+.employee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    background-color: rgb(204, 204, 204);
+    padding: 5px 20px;
+    border-radius: 17px;
+}
+
+.employee_info {
+    margin: 0 1rem 0 0.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;    
+}
+
+.employee_info-name, .employee_info-email{
+    text-align: center;
+    margin-right: 2px;  
+    width: 24%;
+}
+
+.employee_info-startDate{
+    text-align: center;
+    margin-right: 2px;  
+    width: 10%;
+}
+
+.employee_info-team{
+    text-align: center;
+    margin-right: 2px;  
+    width: 17%;
+}
+
+.employee_buttonsArea {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.employee_button {
+    width: 70px;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 0.6rem;
+    color: white;
+    background-color: rgb(63, 63, 185);
+    transition: all .4s;
+}
+
+.employee_button:hover {
+    background-color: rgb(40, 40, 146);
+}
+
+.employee_delete {
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 440px){
+    .employee {
+        align-items: center;
+        margin: 15px 0;
+        background-color: rgb(204, 204, 204);
+        border-radius: 17px;
+        padding: 0 20px;
+        width: 90%;
+        max-width: 90%;
+    }
+    
+    .employee_info-email, .employee_info-startDate, .employee_info-team{
+        display: none;
+    }
+}

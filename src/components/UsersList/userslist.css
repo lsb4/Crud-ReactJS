@@ -1,0 +1,11 @@
+.userList {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.userList_list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 1.3rem;
+}

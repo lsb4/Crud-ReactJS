@@ -1,0 +1,32 @@
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.crudcrudArea  {
+  display: flex;
+}
+
+#postButton, #showButton {
+  margin: 18px 8px 0 8px;
+  width: 9rem;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem 0.6rem;
+  margin-left: 13px;
+  color: white;
+  background-color: rgb(63, 63, 185);
+  transition: all .4s;
+}
+
+#postButton:hover, #showButton:hover {
+    background-color: rgb(40, 40, 146);
+}
+
+@media screen and (max-width: 768px){
+  .mainDiv {
+    overflow-y: hidden;
+  }
+}
