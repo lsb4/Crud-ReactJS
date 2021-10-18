@@ -1,4 +1,4 @@
-A CRUD aplication developed only with ReactJS. The aplication puporse was a technical test for [NutCache](https://www.nutcache.com)
+A CRUD aplication developed only with ReactJS.
 
 # Getting Started with Create React App
 
