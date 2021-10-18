@@ -25,7 +25,7 @@ export default function CrudMenu(props){
 
     return(
         <section className="menu">
-            <h1 className="menu_title">NutCache Employees</h1>
+            <h1 className="menu_title">Employees List</h1>
             <div className="menu_buttonsArea">
                 <button className="menu_button menu_deleteRecent" onClick={() => checkDeletePrevButton()}>Delete Recent</button>
                 <DeletePrevPopup onDelete={props.onDelete} trigger={deletePrevButton} setTrigger={setDeletePrevButton}/>
